@@ -1,0 +1,259 @@
+$maincolor: #217BF4;
+$bl: #1877f2; 
+$dk: #050748; 
+$gy: #65676b; 
+$bg: #ffffff;
+@mixin container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+@mixin buttons{
+    background-color: $maincolor;
+    padding: 15px 40px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    @include container();
+    div{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        nav{
+            display: flex;
+            gap: 20px;
+        }
+    }
+    input{
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+    }
+
+}
+.section1{
+    @include container();
+    aside{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+        h1{
+            font-size: 50px;
+        }
+        button{
+            @include buttons();
+            background-color: #E8F1FE;
+            color: $maincolor;
+        }
+        div{
+            button:first-child{
+                @include buttons;
+            }
+            button:last-child{
+                @include buttons;
+                background-color: white;
+                border: 1px solid $maincolor;
+                color: $maincolor;
+            }
+        }
+    }
+}
+.s1{
+    background: radial-gradient(#D4E7FE,#FFFFFF);
+}
+.section2{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+         aside{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+        margin-top: 150px;
+        h1{
+            font-size: 50px;
+            width: 500px;
+        }
+        p{
+            width: 380px;
+        }
+    }
+    div{
+      margin-top: 30px;
+     h4{
+        padding: 6px;
+     }
+    }
+    
+}
+.w1{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    
+}
+.s3 img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.section2{
+    display: flex;
+}
+
+
+.st {
+max-width: 1200px;
+margin: auto;
+  
+  .cn {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    max-width: 1100px;
+  }
+}
+
+.cd {
+  background: $bg;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  flex: 1;
+  min-width: 280px;
+
+  .ic {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: $dk;
+    img { width: 24px; }
+  }
+
+  .mb, .gh {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: $gy;
+    img { height: 25px; }
+    .bl { color: $bl; font-weight: bold; }
+  }
+
+  .tx {
+    color: $gy;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+
+  .lk {
+    color: $bl;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.cs {
+  flex: 1.2;
+  padding-left: 20px;
+
+  .su {
+    color: $bl;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .tt {
+    color: $dk;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .tx {
+    color: $gy;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .bt {
+    background: $bl;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
+    transition: 0.3s;
+    
+    &:hover {
+      background: darken($bl, 10%);
+    }
+  }
+}
+.e3{
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+   text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    line-height: 30px;
+}
+.f5{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 140px 120px;
+   
+}
+.w22{
+   
+    padding: 40px;
+     display: flex;
+     gap: 7px;
+     box-shadow: 0px 0px 10px gray;
+     border-radius: 10px;
+}
+.s22{
+    width: 65px;
+    height: 65px;
+    
+}
+.f5{
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    gap: 40px;
+}
+.f55{
+     max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    gap: 40px;
+}
+.sq{
+    background: radial-gradient(#FFFFFF,#F1F6FD00,#F1F6FD,#F1F6FD);
+    height: 800px;
+}
