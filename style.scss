@@ -7,6 +7,10 @@ $blue: #217aff;
 $text-dark: #050b33;
 $text-light: #6b708d;
 $bg-light: #f8faff;
+$blu: #217aff;
+$drk: #050b33;
+$lgt: #6b708d;
+$bgc: #eef5ff;
 
 @mixin container {
     display: flex;
@@ -384,7 +388,7 @@ header {
         height: 120px;
         margin: 0 auto 20px;
 
-      
+
         &::before {
             content: '';
             position: absolute;
@@ -400,10 +404,10 @@ header {
         .p1 {
             width: 100%;
             height: 100%;
-            background: #d1d5db; 
+            background: #d1d5db;
             border-radius: 50%;
             overflow: hidden;
-           
+
         }
 
         .v1 {
@@ -435,10 +439,86 @@ header {
         font-size: 14px;
     }
 }
-.no{
+
+.no {
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
     margin-left: 240px;
+
+}
+
+
+
+
+.sec {
+    background-color: $bgc;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.con {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.txt {
+    flex: 1;
+
+    .sub {
+        color: $blu;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .tit {
+        color: $drk;
+        font-size: 48px;
+        line-height: 1.2;
+        margin: 0 0 20px;
+        max-width: 400px;
+    }
+
+    .des {
+        color: $lgt;
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 450px;
+        margin-bottom: 30px;
+    }
+}
+
+.btns {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    .app {
+        img {
+            width: 163px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        &:hover img {
+            transform: translateY(-3px);
+        }
+    }
+}
+
+.mob {
     
+    .phn {
+        position: relative;
+        z-index: 2;
+        max-width: 700px;
+        filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.1));
+    }
+
 }
