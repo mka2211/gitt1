@@ -394,11 +394,12 @@ header input {
 
 .sec {
   background-color: #eef5ff;
-  min-height: 100vh;
+  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin-top: 60px;
 }
 
 .con {
